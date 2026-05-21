@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav id="navbar">
+        <div class="nav-logo">Kouadio Tapé David Diané</div>
+        <ul class="nav-liens">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>  
+    <!-- SECTION ACCUEIL -->
+     <section id="accueil">
+        <div class="hero-contenu">
+            <p class="hero-salutation">Bonjour , je suis </p>
+            <p class="hero-nom">Kouadio Tapé David Diané</p>
+            <h2 class="hero-titre">Développeur Web Full Stack</h2>
+            <p class="hero-description">
+                Passionné par la création de sites web et d'application modernes.
+                J'apprends chaque jour pour construire des projets qui ont du sens.
+            </p>
+            <a href="#contact" class="btn-principal">Me contacter</a>
+        </div>
+     </section> 
+
+     <!-- SECTION À PROPOS -->
+      <section id="apropos">
+        <div class="section-contenu">
+
+          <h2 class="section-titre">À propos de moi</h2>
+
+          <div class="apropos-contenu">
+            <div class="apropos-texte">
+              <p>Bonjour ! Je suis <strong>Kouadio Tapé David Diané</strong>,
+              passionné par le développement web et les nouvelles technologies.</p>
+              <p>J'apprends chaque le HTML, le CSS et la JavaScript
+                pour créer des sites web et des applications modernes. </p>
+              <p>Mon objectif est de dévenir un développeur 
+                Full Stack proffessionel.</p>  
+            </div>
+
+            <div class="apropos-infos">
+              <div class="info-item">
+                <span class="info-label">Nom</span>
+                <span class="info-valeur">Kouadio Tapé David Diané</span>
+              </div>
+
+              <div class="info-item">
+                <span class="info-label">Ville</span>
+                <span class="info-valeur">Abidjan, Côte d'Ivoire</span>
+              </div>
+              
+              <div class="info-item">
+                <span class="info-label">Passion</span>
+                <span class="info-valeur">Développeur Web</span>
+              </div>
+
+              <div class="info-item">
+                <span class="info-label">Statut</span>
+                <span class="info-valeur"> En apprentissage 🚀</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION COMPÉTENCES -->
+
+      <section id="competences">
+        <div class="section-contenu">
+
+          <h2 class="section-titre">Mes Compétences</h2>
+          
+          <div class="competences-grille ">
+
+            <!-- Carte HTML -->
+             <div class="carte-competence">
+              <div class="carte-icone">🌐</div>
+              <h3 class="carte-nom">HTML</h3>
+              <p class="carte-pourcentage">80%</p>
+              <div class="barre-fond">
+                <div class="barre-progression" style="width: 80%;"></div>
+              </div>
+             </div>
+          
+
+          <!-- Carte CSS -->
+           <div class="carte-competence">
+            <div class="carte-icone">🎨</div>
+            <h3 class="carte-nom">CSS</h3>
+            <p class="carte-pourcentage">75%</p>
+            <div class="barre-fond">
+              <div class="barre-progression" style="width: 75%;"></div>
+            </div>
+           </div>
+
+           <!-- Carte JavaScript -->
+            <div class="carte-competence">
+              <div class="carte-icone">⚡</div>
+              <h3 class="carte-nom">JavaScript</h3>
+              <p class="carte-pourcentage">60%</p>
+              <div class="barre-fond">
+                <div class="barre-progression" style="width: 60%;"></div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+       <section id="contact">
+        <div class="section-contenu">
+
+          <h2 class="section-titre">Contactez-moi</h2>
+
+          <div class="contact-contenu">
+
+            <!-- Infos de contact -->
+             <div class="contact-infos">
+
+              <div class="contact-item">
+                <span class="contact-icone">📧</span>
+                <div>
+                  <p class="contact-label">EMAIL</p>
+                  <p class="contact-valeur">daviddianekouadio.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icone">📍</span>
+                <div>
+                  <p class="contact-label">VILLE</p>
+                  <p class="contact-valeur">Abidjan, Côte d'Ivoire</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icone">💼</span>
+                <div>
+                  <p class="contact-label">DISPONIBILITÉ</p>
+                  <p class="contact-valeur">Ouvert aux opportunités</p>
+                </div>
+              </div>
+
+             </div>
+
+             <!-- Formulaire -->
+              <form class="contact-form" id="contact-form">
+
+                <div class="form-groupe">
+                  <label class="form-label">Votre nom</label>
+                  <input type="text"  id="nom" class="form-input" placeholder="Votre nom complet">
+                </div>
+
+                <div class="form-groupe">
+                  <label class="form-label">Votre email</label>
+                  <input type="email"  id="email" class="form-input" placeholder="votre@emil.com">
+                </div>
+
+                <div class="form-groupe">
+                  <label class="form-label">Votre message</label>
+                  <textarea type="text"  id="message" class="form-input form-textarea" placeholder="Votre message..."></textarea>
+                </div>
+                <button type="button" class="btn-envoyer" onclick="envoyerMessage()">
+                  Envoyer le message
+                </button>
+                
+              </form>
+
+          </div>
+        </div>
+       </section>
+    <script src="script.js"></script>
+  </body>
+</html>

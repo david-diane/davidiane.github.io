@@ -1,0 +1,325 @@
+/* === RESET ET BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: #0a0a0a;
+}
+
+/* === NAVIGATION === */
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #1a1a2e;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-logo{
+    color: #e94560;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-liens{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-lien a{
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-liens a:hover{
+    color: #e94560;
+}
+
+/* === SECTION ACCUEIL === */
+#accueil {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 40px 40px 40px;
+  background-color: #0a0a0a;
+}
+
+.hero-contenu{
+    color: #e94560;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero-nom{
+    color: #ecf0f1;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-titre{
+    color: #e94560;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-description{
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-principal{
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+btn.btn-principal:hover{
+    background-color: transparent;
+    border: 2px solid #e94560;
+    color: #e94560;
+}
+
+/* === STYLES COMMUNS AUX SECTIONS === */
+
+.section-contenu{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+
+.section-titre{
+    font-size: 32px;
+    color: #ecf0f1;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.section-titre::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e94560;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* === SECTION À PROPOS === */
+
+#apropos{
+    background-color: #1a1a2e;
+}
+
+.apropos-contenu{
+    display: flex;
+    grid-auto-flow: 60px;
+    align-items: flex-start;
+}
+
+.apropos-texte{
+    flex: 1;
+}
+
+.apropos-texte p{
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.apropos-texte strong{
+    color: #ecf0f1;
+}
+
+.apropos-infos{
+    flex: 1;
+}
+
+.info-item{
+    display: flex;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #2a2a4a;  
+}
+
+.info-label{
+    color: #e94560;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.info-valeur{
+    color: #ecf0f1;
+}
+
+/* === SECTION COMPÉTENCES === */
+
+#competences{
+    background-color: #0a0a0a;
+}
+
+.competences-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.carte-competence{
+    background-color: #0f3460;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.carte-competence:hover{
+    transform: translateY(-8px);
+}
+
+.carte-icone{
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.carte-nom{
+    color: #ecf0f1;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.carte-pourcentage{
+    color: #e94560;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.barre-fond{
+    color: #1a1a2e;
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.barre-progression{
+    background-color: #e94560;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* === SECTION CONTACT === */
+
+#contact{
+    background-color: #1a1a2e;
+}
+
+.contact-contenu{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contact-infos{
+    flex: 1;
+}
+
+.contact-item{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.contact-icone{
+    font-size: 28px;
+}
+
+.contact-label{
+    color: #e94560;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+}
+
+.contact-valeur{
+    color: #ecf0f1;
+    font-size: 15px;
+}
+
+/* === FORMULAIRE === */
+.contact-form{
+    flex:2;
+}
+
+.form-groupe{
+    margin-bottom: 20px;
+}
+
+.form-label{
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #0f3460;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #ecf0f1;
+    font-size: 14px;
+    font-family: arial;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus{
+    border-color: #e94560;
+}
+
+.forme-textarea{
+    height: 140px;
+    resize: none;
+}
+
+.btn-envoyer{
+    padding: 14px 32px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-envoyer:hover{
+    background-color: transparent;
+    border: 2px solid #e94560;
+    color: #e94560;
+}
