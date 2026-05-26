@@ -55,49 +55,74 @@ body{
   background-color: #0a0a0a;
 }
 
-.hero-contenu{
-    color: #e94560;
-    font-size: 18px;
-    margin-bottom: 10px;
+.hero-contenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
 }
 
-.hero-nom{
-    color: #ecf0f1;
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    line-height: 1.2;
+.hero-texte {
+  flex: 1;
 }
 
-.hero-titre{
-    color: #e94560;
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 20px;
+.hero-salutation {
+  color: #e94560;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.hero-description{
-    color: #aaa;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 30px;
+.hero-nom {
+  color: #ecf0f1;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
-.btn-principal{
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: #e94560;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease;
+.hero-titre {
+  color: #e94560;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
-btn.btn-principal:hover{
-    background-color: transparent;
-    border: 2px solid #e94560;
-    color: #e94560;
+.hero-description {
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn-principal {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #e94560;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: transparent;
+  border: 2px solid #e94560;
+  color: #e94560;
+}
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e94560;
+  box-shadow: 0 0 30px rgba(233, 69, 96, 0.3);
 }
 
 /* === STYLES COMMUNS AUX SECTIONS === */
